@@ -22,19 +22,19 @@ router.get("/",(req,res,next)=>{
     "student_course_details":"",
     "student_mail_id":"",
         },
-        
+
     {   "mentor_name":"",
         "mentor_id":"",
         "student":{
             "student_name":"",
             "student_id":"",
         }},{
-            "url":"/mentorcreate",
-            "url":"/studentcreate",
-            "url":"/studentassign",
-            "url":"/allstudentassigned",
-            "url":"/allstudent",
-            "url":"/allmentors"
+            "url1":"/mentorcreate",
+            "url2":"/studentcreate",
+            "url3":"/studentassign",
+            "url4":"/allstudentassigned",
+            "url5":"/allstudent",
+            "url6":"/allmentors"
         }])
     
 })
