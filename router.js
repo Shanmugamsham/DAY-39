@@ -22,12 +22,20 @@ router.get("/",(req,res,next)=>{
     "student_course_details":"",
     "student_mail_id":"",
         },
+        
     {   "mentor_name":"",
         "mentor_id":"",
         "student":{
             "student_name":"",
             "student_id":"",
-        }}])
+        }},{
+            "url":"/mentorcreate",
+            "url":"/studentcreate",
+            "url":"/studentassign",
+            "url":"/allstudentassigned",
+            "url":"/allstudent",
+            "url":"/allmentors"
+        }])
     
 })
 router.post("/mentorcreate", async(req,res,next)=>{
@@ -51,7 +59,7 @@ router.post("/studentassign",async(req,res,next)=>{
     console.log(req.body);
 })
 
-router.get("/allstudentassign",async(req,res,next)=>{
+router.get("/allstudentassigned",async(req,res,next)=>{
       await models.assignstudentmodel.find().then((response)=>{
         res.status(200).json({
             success:true,
